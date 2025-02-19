@@ -1,0 +1,40 @@
+#World Building Module
+
+
+Test of School, Division, Class
+Input:
+	akren = School('Akren', 'Harry Potter World')
+	akren.addReqs('animagus form')
+	akren.addReqs('Not dying')
+
+	combat = Division('Combat')
+	h2h = Subject('Hand to Hand', 'Fluidity in martial arts', '3 months')
+	long = Subject('Long Range Weaponry', 'Atleast two weapons capable of destruction from  50 - 400 yards', '1 year')
+
+	combat.addClass(h2h)
+	combat.addClass(long)
+
+	akren.addDivision(combat)
+
+
+	#School test
+	print(akren)
+
+
+Expected Output:
+	School: Akren 
+	Harry Potter World 
+	Reqs:
+		animagus form 
+		Not dying 
+
+	Division: Combat 
+		Class: Hand to Hand 
+		Completion Time: 3 months 
+		Summary: Fluidity in martial arts
+
+		Class: Long Range Weaponry 
+		Completion Time: 1 year 
+		Summary: Atleast two weapons capable of destruction from  50 - 400 yards
+
+Test was sucessful. 
